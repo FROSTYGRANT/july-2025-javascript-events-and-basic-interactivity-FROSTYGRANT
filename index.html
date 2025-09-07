@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎉 Interactive Web Page</h1>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="toggleMessageBtn">Show/Hide Message</button>
+    <p id="message" class="hidden">Hello! You clicked the button. 🎉</p>
+  </section>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>Part 2: Interactive Features</h2>
+
+    <!-- Light/Dark Mode -->
+    <button id="themeToggle">Toggle Dark Mode 🌙</button>
+
+    <!-- Counter Game -->
+    <div class="counter-box">
+      <h3>Counter Game</h3>
+      <p id="counterValue">0</p>
+      <button id="incrementBtn">+1</button>
+      <button id="decrementBtn">-1</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="signupForm" novalidate>
+      <label>Name: <input type="text" id="name" /></label>
+      <small class="error" id="nameError"></small>
+
+      <label>Email: <input type="email" id="email" /></label>
+      <small class="error" id="emailError"></small>
+
+      <label>Password: <input type="password" id="password" /></label>
+      <small class="error" id="passwordError"></small>
+
+      <label>Confirm Password: <input type="password" id="confirmPassword" /></label>
+      <small class="error" id="confirmPasswordError"></small>
+
+      <button type="submit">Sign Up</button>
+      <p id="formSuccess" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
